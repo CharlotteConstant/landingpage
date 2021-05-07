@@ -7,7 +7,8 @@ body {
   background-image: url(/greyzz_@2X.png);
 }
 
-h2 {
+h2,
+.sousTitre {
   font-family: "Newsreader", sans-serif;
   font-weight: bold;
 }

@@ -19,6 +19,12 @@ sr.reveal("h2", {
   duration: 2000,
 });
 
+sr.reveal(".sousTitre", {
+  origin: "left",
+  distance: "100px",
+  duration: 2000,
+});
+
 sr.reveal(".vietnam", {
   origin: "right",
   distance: "20px",
