@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/5bb8a8247b.js" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Photographie - Charlotte Constant</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="container-fluid">
+        <div class="card mt-2">
+            <div class="card__content">
+
+                <div class="card__front">
+                    <h3 class="card__title">Charlotte Constant</h3>
+                    <p class="card__subtitle">Photographies de Voyages</p>
+                </div>
+
+                <div class="card__back">
+                    <p class="card__body text-white">Bienvenue sur cette landing page sur le thème de la photo, qui me
+                        permet de
+                        m'exercer. <br>Elle met en avant quelques photos de voyages, de randonnées, de découvertes
+                        culturelles.<br> Je vous laisse découvrir certaines de mes aventures</p>
+                    <div class="bouton d-flex justify-content-center mt-5">
+                        <a href="#photos" class="btn text-center text-white fw-bold"> Voir mes
+                            réalisations <i class="fas fa-paper-plane fa-2x ps-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--Fin du header-->
+    <main>
+        <!--Début section Bolivia-->
+        <section id="photos" class="mt-5 mb-5">
+            <h2 class="ps-5 mb-4"> First stop: Bolivia </h2>
+            <div class="container-fluid bloc">
+                <div class="contain">
+                    <img class="one" src="bolivie/102_5597.jpeg">
+                    <div class="middle">
+                        <p class="text">Salar d'Uyuni - Isla Incahuasi</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_2961.jpeg">
+                    <div class="middle">
+                        <p class="text">Coqueza Canton</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/102_5539.jpeg">
+                    <div class="middle">
+                        <p class="text">Salar d'Uyuni</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_3043.jpeg">
+                    <div class="middle">
+                        <p class="text">Volcano Tunupa</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/102_5519.jpeg">
+                    <div class="middle">
+                        <p class="text">Salar d'Uyuni - Coqueza</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_3305.jpeg">
+                    <div class="middle">
+                        <p class="text">Laguna Colorada - Potosi</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_3391.jpg">
+                    <div class="middle">
+                        <p class="text">Laguna verde - Sud Lipez</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_3415.jpg">
+                    <div class="middle">
+                        <p class="text">Laguna Negra - Sud Lipez</p>
+                    </div>
+                </div>
+                <div class="contain">
+                    <img class="one" src="bolivie/IMG_2817.jpeg">
+                    <div class="middle">
+                        <p class="text">salar d'Uyuni</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin section Bolivia-->
+
+        <!--Début section Vietnam-->
+        <section class="container-fluid blackBloc">
+            <h2 class="ps-5 pt-5 text-white">Next stop: Vietnam</h2>
+            <p class="text-white ps-5">Du nord au Sud, découverte du Vietnam</p>
+            <article class="vietnam">
+                <div class="formes">
+                    <img src="vietnam/1.jpeg">
+                    <img src="vietnam/2.jpeg">
+                    <img src="vietnam/3.jpeg">
+                    <img src="vietnam/4.jpeg">
+                    <img src="vietnam/5.jpeg">
+                    <img src="vietnam/6.jpeg">
+                    <img src="vietnam/7.jpeg">
+                    <img src="vietnam/8.jpeg">
+                    <img src="vietnam/9.jpeg">
+                    <img src="vietnam/11.jpeg">
+                </div>
+            </article>
+        </section>
+        <!--Fin section Vietnam-->
+
+        <!--Début section Peru-->
+        <section class="peru mb-5">
+            <h2 class="ps-5 mb-4 mt-5"> Last stop: Peru</h2>
+            <p class="ps-5">Traversée du Pérou (canyon del colca, machu picchu, lac titicaca...</p>
+            <div class="container-fluid">
+                <div class="row d-flex flex-row flex-wrap justify-content-center">
+                    <div class="col-lg-4 d-flex flex-column">
+                        <img src="perou/IMG_2364.jpeg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
+                        <p>Machu Picchu</p>
+
+
+                        <img src="perou/IMG_1763.jpeg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+                        <p>Lima</p>
+
+                        <img src="perou/IMG_1751.jpeg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
+                        <p>Huacachina</p>
+
+                        <img src="perou/IMG_2018.jpg" onclick="openLightbox();toSlide(4)"
+                            class="hover-shadow preview scale">
+                        <p>Canyon de Colca</p>
+                    </div>
+
+                    <div class="col-lg-4 d-flex flex-column">
+                        <img src="perou/102_5345.jpeg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview">
+                        <p>Canyon de Colca</p>
+
+
+                        <img src="perou/IMG_3688.jpeg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview">
+                        <p>Machu Picchu</p>
+
+                        <img src="perou/IMG_2581.jpeg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview">
+                        <p>Region Cuzco</p>
+
+
+                        <img src="perou/IMG_1537.jpeg" onclick="openLightbox();toSlide(8)"
+                            class="hover-shadow preview mt-3">
+                        <p>Lima - Barranco</p>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column">
+                        <img src="perou/IMG_1610.jpeg" onclick="openLightbox();toSlide(9)" class="hover-shadow preview">
+                        <p>Huacachina</p>
+
+                        <img src="perou/IMG_2587.jpeg" onclick="openLightbox();toSlide(10)"
+                            class="hover-shadow preview">
+                        <p>Region Cuzco</p>
+
+                        <img src="perou/IMG_2655.jpg" onclick="openLightbox();toSlide(11)" class="hover-shadow preview">
+                        <p>Salineras de Maras</p>
+
+                        <img src="perou/IMG_1905.jpeg" onclick="openLightbox();toSlide(12)"
+                            class="hover-shadow preview scale">
+                        <p>Cuzco</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="Lightbox" class="modal">
+
+                <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                <div class="modal-content">
+                    <div class="slide">
+                        <img src="perou/IMG_2364.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_1763.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_1751.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_2018.jpg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/102_5345.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_3688.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_2581.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_1537.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_1610.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_2587.jpeg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_2655.jpg" class="image-slide">
+                    </div>
+                    <div class="slide">
+                        <img src="perou/IMG_1905.jpeg" class="image-slide">
+                    </div>
+
+                    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+                </div>
+            </div>
+        </section>
+        <!--Fin section peru-->
+    </main>
+
+    <!--Début section footer-->
+    <footer class="py-3">
+        <img class="logo" src="logo1.png">
+        <p class="text-center text-white">Charlotte Constant © 2021</p>
+    </footer>
+    <!--Fin section footer-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+
+/******************
+**CSS STYLE GENERAL** 
+******************/
+body {
+  background-image: url(/greyzz_@2X.png);
+}
+
+h2 {
+  font-family: "Newsreader", sans-serif;
+  font-weight: bold;
+}
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.bouton .btn {
+  border: 1px solid;
+  padding: 20px 40px;
+}
+
+footer {
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+}
+
+.logo {
+  width: 5%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/***HEADER***/
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.card {
+  width: 100%;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 20em 5em;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-image: url(bolivie/IMG_3209.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front::before {
+  content: "";
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid white;
+  transform: var(--level-one);
+}
+
+.card__title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  opacity: 0.7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  transform: rotateY(0.5turn);
+  background-color: rgb(24, 24, 24);
+}
+
+/*** grid bolivie ***/
+
+.bloc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.contain {
+  position: relative;
+}
+
+.contain img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contain:hover .one {
+  opacity: 0.3;
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+
+#photos {
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+/*** vietnam ***/
+
+.blackBloc {
+  background-color: rgb(24, 24, 24);
+}
+
+.vietnam {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.formes {
+  position: relative;
+  flex-grow: 1;
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+.formes img {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 95%;
+  margin-bottom: -38%;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transform: scale(1);
+  transition: all 0.35s;
+}
+
+.formes img:nth-child(7n + 1) {
+  grid-column: 2 / span 2;
+}
+
+.formes img:hover {
+  z-index: 2;
+  transform: scale(2);
+}
+
+/*** peru flexbox ***/
+.peru {
+  margin-top: 80px;
+}
+
+.preview {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.scale {
+  transform: scaleY(1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 10px 62px 0px 62px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.385);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0 0 0 0;
+  width: 50%;
+}
+
+.slide {
+  display: none;
+}
+
+.image-slide {
+  width: 100%;
+}
+
+img.preview,
+img.modal-preview {
+  opacity: 1;
+}
+
+img.active,
+.preview:hover,
+.modal-preview:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*********************
+**** MEDIAS QUERIES****
+***********************/
+
+/*** Peru ***/
+@media (max-width: 900px) {
+  .bloc {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*** vietnam ***/
+@media (max-width: 900px) {
+  .formes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .formes img {
+    max-width: 90%;
+    padding-bottom: 50px;
+  }
+}
