@@ -341,11 +341,11 @@ img.active,
   .formes {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    margin-right: 200px;
+    /* margin-left: 200px;
+    margin-right: 200px;*/
   }
   .formes img {
-    max-width: 90%;
+    max-width: 100%;
     padding-bottom: 50px;
   }
 }
