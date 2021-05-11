@@ -350,5 +350,6 @@ img.active,
   }
   .formes img:hover {
     transform: scale(1.4);
+    transition: 0s linear 0.05s;
   }
 }
