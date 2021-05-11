@@ -341,11 +341,14 @@ img.active,
   .formes {
     display: flex;
     flex-direction: column;
-    /* margin-left: 200px;
-    margin-right: 200px;*/
+    margin: 50px;
+    z-index: 1;
   }
   .formes img {
-    max-width: 100%;
-    padding-bottom: 50px;
+    max-width: 120%;
+    padding-bottom: 20px;
+  }
+  .formes img:hover {
+    transform: scale(1.4);
   }
 }
