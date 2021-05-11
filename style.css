@@ -341,12 +341,15 @@ img.active,
   .formes {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    z-index: 1;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 2;
   }
+
   .formes img {
-    max-width: 120%;
-    padding-bottom: 20px;
+    max-width: 180%;
+    padding-bottom: 50px;
   }
   .formes img:hover {
     transform: scale(1.4);
