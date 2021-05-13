@@ -33,6 +33,43 @@ footer {
   margin-bottom: 15px;
 }
 
+h2 {
+  position: relative;
+}
+
+#photos h2::after {
+  content: "";
+  height: 15px;
+  width: 250px;
+  background-color: rgb(209, 209, 209);
+  position: absolute;
+  top: calc(100% - 20px);
+  left: calc(50% - 118px);
+  z-index: -1;
+}
+
+.blackBloc h2::after {
+  content: "";
+  height: 15px;
+  width: 275px;
+  background-color: rgb(77, 77, 77);
+  position: absolute;
+  top: calc(100% - 20px);
+  left: calc(50% - 132px);
+  z-index: -1;
+}
+
+.peru h2::after {
+  content: "";
+  height: 15px;
+  width: 210px;
+  background-color: rgb(209, 209, 209);
+  position: absolute;
+  top: calc(100% - 20px);
+  left: calc(50% - 100px);
+  z-index: -1;
+}
+
 /***HEADER***/
 
 :root {
