@@ -82,8 +82,7 @@ h2 {
 }
 
 *,
-*::before,
-*::after {
+*::before {
   box-sizing: border-box;
   margin: 0;
 }
